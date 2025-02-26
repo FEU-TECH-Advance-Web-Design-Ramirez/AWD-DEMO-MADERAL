@@ -77,26 +77,31 @@ svg {
 
 body {
     display: flex;
+    flex-direction: column;
     font-family: var(--font-family-default);
     font-size: var(--fs-400);
     color: var(--clr-neutral-700);
     height: 100vh;
     width: 100vw;
+    background-image: url("../img/jeremy-bishop-QHZn3-0bbEM-unsplash.jpg");
+    background-position: center;
 }
 
 header {
     display: flex;
-    background-color: grey;
+    background-color: rgb(197, 184, 184);
     justify-content: space-between;
     height:8%;
     width: 100%;
+
 
     h1 {
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 1rem 1rem;
-        
+        font-weight: var(--fw-bold);
+
     }
     nav {
         display: flex;
@@ -116,5 +121,25 @@ header {
             }
         }
 
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:92%;
+    width: 100%;
+    /* background-color: red; */
+    
+    h1 {
+        font-size: var(--fs-900);
+        color: var(--fc-secondary);
+    }
+    h3 {
+        text-align: left;
+        color: var(--fc-secondary);
+        font-size: var(--fs-700);
     }
 }
